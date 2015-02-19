@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,300' rel='stylesheet' type='text/css'>
+    <link href='css/main.css' rel='stylesheet' type='text/css'>
+    <style>
+        #clear-day {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/sun.png);
+            background-size: 100%;
+        }
+        
+        #clear-night {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/moon.png);
+            background-size: 100%;
+        }
+        
+        #rain {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/rain.png);
+            background-size: 100%;
+        }
+        
+        #snow {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/snow.png);
+            background-size: 100%;
+        }
+        
+        #sleet {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/sleet.png);
+            background-size: 100%;
+        }
+        
+        #wind {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/wind.png);
+            background-size: 100%;
+        }
+        
+        #fog {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/fog.png);
+            background-size: 100%;
+        }
+        
+        #cloudy {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/cloudy.png);
+            background-size: 100%;
+        }
+        
+        #partly-cloudy-day {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/partlycloudyday.png);
+            background-size: 100%;
+        }
+        
+        #partly-cloudy-night {
+            width: 100px;
+            height: 100px;
+            background-image: url(images/weather-icons/partlycloudynight.png);
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color">
+    <div class="content">
+        <h1>Weather</h1>
+        <p id="icon"></p>
+        <p id="nowsummary">Loading...</p>
+        <div class="current">
+            <h2>Currently</h2>
+            <p id="temp">Loading...
+            </p>
+            <p>Feels likes:</p>
+            <p id="feelslike">Loading...
+            </p>
+        </div>
+        <div class="weekahead">
+            <h2>Week overview</h2>
+            <p id="daysum">Loading...</p>
+        </div>
+        <p class="datacredit">Powered by <a href="http://forecast.io/">Forecast</a>
+        </p>
+    </div>
+</div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/geo-location-javascript/0.4.8/geo-min.js"></script>
+    <script src="weatherapi.js"></script>
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</body>
+
+</html>
