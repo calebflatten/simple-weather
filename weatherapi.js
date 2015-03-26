@@ -8,8 +8,8 @@ if(geo_position_js.init()) {
 
         function success_callback(p) {
 
-            /*	alert('lat='+p.coords.latitude.toFixed(2)+
-                  ';lon='+p.coords.longitude.toFixed(2));*/
+            	alert('lat='+p.coords.latitude.toFixed(2)+
+                  ';lon='+p.coords.longitude.toFixed(2));
 
             var apiKey = 'bf9ece433d3c64b82ee633014173a8b4';
             var url = 'https://api.forecast.io/forecast/';
